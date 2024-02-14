@@ -1,6 +1,7 @@
 import flet as ft
 import requests
 
+
 def main(page: ft.Page):
     page.title = 'Погода'
     page.theme_mode = 'dark'
