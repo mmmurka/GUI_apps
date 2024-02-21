@@ -17,6 +17,7 @@ def main(page: ft.Page):
         API = 'f6af234f8ad6716fae9b66dcaeefdd36'
         URL = f'https://api.openweathermap.org/data/2.5/weather?q={user_data.value}&APPID={API}&units=metric'
         result = requests.get(URL).json()
+        print(result)
         try:
             temp = result['main']['temp']
             weather_data.value = f'Погода: {temp}°'
